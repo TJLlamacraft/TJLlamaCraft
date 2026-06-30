@@ -112,9 +112,9 @@ $(document).ready(function () {
   //gonna do a set active situation. When the img is pressed, the panel opens, if any area outside of the panel is pressed, the panel closes? That or there is a button to close it.
   //need to make sure that it gets done automatically based on the project name/ number in order or smth, probs using a for loop
 
-  $(".CarouselIMG").click(function (event) {
+  $(".Caption-Button").click(function (event) {
     for (let i = 0; i < ProjectPanels.length; i++) {
-      if (event.target.id === `ProjectIMG${i + 1}`) {
+      if (event.target.id === `Caption-Button-${i + 1}`) {
         console.log(`Open project panel ${i + 1}`);
         currentProjetPanel = ProjectPanels[i];
         ProjectPanels[i].show();
@@ -146,6 +146,8 @@ $(document).ready(function () {
   $("#InstaButton").click(() => {
     window.open("https://www.instagram.com/tjllamacraft/", "_blank");
   });
+
+  
 
   //#endregion
 });
